@@ -123,11 +123,11 @@ export default function GalleryPage() {
                 
                 {item.image ? (
                   /* Real Image Rendering when available */
-                  <div className="relative w-full h-full">
+                  <div className={`relative w-full ${item.aspectRatio} overflow-hidden rounded-lg`}>
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full h-full object-cover"
                     />
                     <button
                       type="button"

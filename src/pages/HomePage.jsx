@@ -5,6 +5,7 @@ import Button from '../components/Button';
 import ImpactStat from '../components/ImpactStat';
 import TrainerSpotlight from '../components/TrainerSpotlight';
 import { ORGANIZATION_DATA } from '../data/organization';
+import { GALLERY_ITEMS } from '../data/galleryData';
 import {
   ArrowRight,
   ShieldCheck,
@@ -82,29 +83,19 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Hero Visual Frame (Designated for Real CES Campaign Photography) */}
+          {/* Hero Visual Frame (Featuring Real CES Campaign Photography) */}
           <div className="lg:col-span-5 w-full">
             <div className="inst-card p-4 sm:p-5 relative overflow-hidden group">
-              <div className="relative aspect-[4/3] rounded-xl bg-slate-900 border border-slate-800/80 flex flex-col items-center justify-center text-center p-6 overflow-hidden">
-                {/* Visual Placeholder Mesh Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 opacity-90" />
-                <div className="absolute -right-12 -bottom-12 w-48 h-48 bg-sky-500/10 rounded-full blur-2xl" />
-
-                <div className="relative z-10 flex flex-col items-center max-w-xs">
-                  <div className="w-14 h-14 rounded-2xl bg-slate-800 border border-slate-700/80 flex items-center justify-center text-sky-400 mb-4 shadow-lg">
-                    <GraduationCap className="w-7 h-7" />
-                  </div>
-                  <span className="text-xs font-semibold uppercase tracking-widest text-sky-400 mb-1">
-                    Campaign Photograph Frame
-                  </span>
-                  <h3 className="text-base sm:text-lg font-bold text-slate-100 mb-2">
-                    Awareness Sessions Frame
-                  </h3>
-                  <p className="text-xs text-slate-400 leading-relaxed mb-4">
-                    Conducting motivational sessions for second-year intermediate students before their transition to higher education.
-                  </p>
-                  <div className="px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-[11px] text-slate-400">
-                    Campaign photograph to be added
+              <div className="relative aspect-[4/3] rounded-xl bg-slate-900 border border-slate-800/80 flex flex-col items-center justify-center text-center overflow-hidden">
+                <img
+                  src="/images/speaking-podium.jpg"
+                  alt="Dr. Kalyan Chundi addressing students during a CES awareness session"
+                  className="w-full h-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 text-left">
+                  <div className="text-xs text-slate-200">
+                    <span className="font-bold block text-sky-400">Campaign Outreach</span>
+                    Interactive awareness session in progress.
                   </div>
                 </div>
               </div>
@@ -113,7 +104,7 @@ export default function HomePage() {
               <div className="mt-4 flex items-center justify-between text-xs text-slate-400 px-1">
                 <span className="flex items-center gap-1.5 font-medium text-slate-300">
                   <MapPin className="w-3.5 h-3.5 text-sky-400" />
-                  South India Focus
+                  Campaign Session, South India
                 </span>
                 <span className="font-semibold text-amber-400">6.12M+ Students</span>
               </div>
@@ -397,21 +388,31 @@ export default function HomePage() {
 
         {/* Clean Static Image Slots */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[1, 2, 3].map((item) => (
-            <div key={item} className="inst-card p-4 flex flex-col gap-3 group">
-              <div className="aspect-[16/10] rounded-lg bg-slate-900 border border-slate-800 flex flex-col items-center justify-center p-4 text-center relative overflow-hidden">
-                <div className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-400 mb-2 group-hover:text-sky-400 transition-colors">
-                  <ImageIcon className="w-5 h-5" />
-                </div>
-                <span className="text-xs font-semibold text-slate-300">
-                  Campaign Photograph #{item}
-                </span>
-                <span className="text-[11px] text-slate-500 mt-1">
-                  Campaign photograph to be added
-                </span>
+          {GALLERY_ITEMS.slice(0, 3).map((item) => (
+            <div key={item.id} className="inst-card p-4 flex flex-col gap-3 group">
+              <div className="aspect-[16/10] rounded-lg bg-slate-900 border border-slate-800 flex flex-col items-center justify-center text-center relative overflow-hidden">
+                {item.image ? (
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                ) : (
+                  <>
+                    <div className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-400 mb-2 group-hover:text-sky-400 transition-colors">
+                      <ImageIcon className="w-5 h-5" />
+                    </div>
+                    <span className="text-xs font-semibold text-slate-300">
+                      {item.title}
+                    </span>
+                    <span className="text-[11px] text-slate-500 mt-1">
+                      Campaign photograph to be added
+                    </span>
+                  </>
+                )}
               </div>
               <div className="flex items-center justify-between text-xs text-slate-400 px-1">
-                <span>Awareness Session Frame</span>
+                <span>{item.categoryLabel}</span>
                 <span className="text-sky-400 font-medium">South India</span>
               </div>
             </div>
