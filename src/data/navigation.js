@@ -1,7 +1,7 @@
 export const NAV_LINKS = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
-  { label: "Our Impact", path: "/impact" },
+  { label: "Our Reach & Impact", path: "/impact" },
   { label: "Gallery", path: "/gallery" },
   { label: "Contact", path: "/contact" }
 ];
@@ -11,7 +11,7 @@ export const FOOTER_SECTIONS = [
     title: "Organization",
     links: [
       { label: "About CES", path: "/about" },
-      { label: "Our Impact", path: "/impact" },
+      { label: "Our Reach & Impact", path: "/impact" },
       { label: "Gallery", path: "/gallery" }
     ]
   },

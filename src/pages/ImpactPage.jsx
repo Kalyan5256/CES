@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import SectionHeader from '../components/SectionHeader';
 import Button from '../components/Button';
 import ImpactStat from '../components/ImpactStat';
+import CoverageExplorer from '../components/CoverageExplorer';
 import { ORGANIZATION_DATA } from '../data/organization';
 import {
   ArrowRight,
@@ -33,7 +34,7 @@ export default function ImpactPage() {
         <div className="flex flex-col items-start max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full badge-institutional text-xs sm:text-sm font-semibold uppercase tracking-wider mb-6">
             <ShieldCheck className="w-4 h-4 text-sky-400 shrink-0" />
-            <span>Documented Social Reach & Operations</span>
+            <span>Documented Social Reach & Impact</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-100 leading-[1.15] mb-6">
@@ -194,81 +195,10 @@ export default function ImpactPage() {
       </section>
 
       {/* ==================================================
-          4. OUR GEOGRAPHIC REACH (Static 5 Southern States)
+          4. COVERAGE EXPLORER (Interactive 5 Southern States & Future Archive)
           ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="inst-card p-6 sm:p-12 relative">
-          
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            <div className="lg:col-span-5 flex flex-col items-start">
-              <span className="text-xs font-semibold uppercase tracking-widest text-sky-400 mb-2">
-                Geographic Focus
-              </span>
-              <h2 className="text-2xl sm:text-4xl font-bold text-slate-100 mb-4 leading-tight">
-                Our Geographic Reach
-              </h2>
-              <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">
-                CES conducts sessions across educational institutions in five states in South India.
-              </p>
-
-              <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 w-full mb-2">
-                <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
-                  Documented Geographic Focus
-                </div>
-                <div className="text-base font-bold text-slate-100">
-                  South India (5 States)
-                </div>
-              </div>
-            </div>
-
-            {/* Visual State Chips & Layout */}
-            <div className="lg:col-span-7">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {ORGANIZATION_DATA.statesCovered.map((state) => (
-                  <div
-                    key={state.code}
-                    className="p-4 rounded-xl bg-slate-900 border border-slate-800/90 flex items-center justify-between group hover:border-sky-500/30 transition-colors"
-                  >
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-lg bg-sky-500/10 border border-sky-500/20 text-sky-400 font-bold text-sm flex items-center justify-center">
-                        {state.code}
-                      </div>
-                      <div>
-                        <div className="text-sm font-bold text-slate-100">
-                          {state.name}
-                        </div>
-                        <div className="text-xs text-slate-400">
-                          Documented State
-                        </div>
-                      </div>
-                    </div>
-                    <MapPin className="w-4 h-4 text-slate-600 group-hover:text-sky-400 transition-colors" />
-                  </div>
-                ))}
-
-                {/* Regional Institutional Highlight */}
-                <div className="p-4 rounded-xl bg-slate-900/90 border border-amber-500/30 flex items-center justify-between sm:col-span-2">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 font-bold text-sm flex items-center justify-center">
-                      <School className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-bold text-slate-100">Educational Institutions</div>
-                      <div className="text-xs text-slate-400">Intermediate colleges across South India</div>
-                    </div>
-                  </div>
-                  <span className="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">
-                    Free of charge
-                  </span>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-        </div>
+        <CoverageExplorer />
       </section>
 
       {/* ==================================================

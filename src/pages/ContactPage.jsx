@@ -260,7 +260,7 @@ export default function ContactPage() {
 
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
             <Button to="/impact" variant="primary" size="lg" icon={ArrowRight} className="w-full sm:w-auto">
-              Our Impact
+              Our Reach & Impact
             </Button>
             <Button to="/about" variant="secondary" size="lg" className="w-full sm:w-auto">
               About CES

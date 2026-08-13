@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import SectionHeader from '../components/SectionHeader';
 import Button from '../components/Button';
 import ImpactStat from '../components/ImpactStat';
+import TrainerSpotlight from '../components/TrainerSpotlight';
 import { ORGANIZATION_DATA } from '../data/organization';
 import {
   ArrowRight,
@@ -57,7 +58,7 @@ export default function HomePage() {
             {/* Call to Actions */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto mb-10">
               <Button to="/impact" variant="primary" size="lg" icon={ArrowRight} className="w-full sm:w-auto">
-                Our Impact
+                Our Reach & Impact
               </Button>
               <Button to="/about" variant="secondary" size="lg" className="w-full sm:w-auto">
                 About CES
@@ -170,7 +171,7 @@ export default function HomePage() {
               <span>Activities are conducted free of charge. No fees are collected from students, parents, or educational institutions.</span>
             </div>
             <Link to="/impact" className="text-sky-400 font-semibold hover:underline flex items-center gap-1">
-              <span>View Our Impact</span>
+              <span>View Our Reach & Impact</span>
               <ArrowRight className="w-3 h-3" />
             </Link>
           </div>
@@ -264,6 +265,11 @@ export default function HomePage() {
 
         </div>
       </section>
+
+      {/* ==================================================
+          TRAINER SPOTLIGHT (The People Behind the Mission)
+          ================================================== */}
+      <TrainerSpotlight />
 
       {/* ==================================================
           4. OUR REACH (Static South India Visual)
@@ -433,7 +439,7 @@ export default function HomePage() {
 
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
             <Button to="/impact" variant="primary" size="lg" icon={ArrowRight} className="w-full sm:w-auto">
-              Our Impact
+              Our Reach & Impact
             </Button>
             <Button to="/about" variant="secondary" size="lg" className="w-full sm:w-auto">
               About CES
