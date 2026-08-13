@@ -1,0 +1,37 @@
+# Internal / Confidential Documents
+CES_Project_Documentation.docx
+*.docx
+
+# Dependencies
+node_modules
+.pnpm-store
+
+# Production build outputs
+dist
+dist-ssr
+*.local
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE / Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvsopt
+*.njsproj
+*.sln
+*.sw?
+
+# OS temporary files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
