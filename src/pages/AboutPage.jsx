@@ -25,7 +25,7 @@ export default function AboutPage() {
           ================================================== */}
       <section className="relative pt-6 sm:pt-12 lg:pt-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         {/* Ambient Subtle Backlight */}
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[500px] h-[300px] bg-sky-900/15 rounded-full blur-3xl pointer-events-none -z-10" />
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-75 sm:w-125 h-75 bg-sky-900/15 rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="flex flex-col items-start max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full badge-institutional text-xs sm:text-sm font-semibold uppercase tracking-wider mb-6">
@@ -141,7 +141,7 @@ export default function AboutPage() {
           </div>
 
           {/* Side Highlight Panel */}
-          <div className="lg:col-span-4 inst-card p-6 flex flex-col justify-center bg-gradient-to-b from-slate-900 to-slate-950">
+          <div className="lg:col-span-4 inst-card p-6 flex flex-col justify-center bg-linear-to-b from-slate-900 to-slate-950">
             <h3 className="text-lg font-bold text-slate-100 mb-3">
               Focus Parameters
             </h3>
@@ -203,7 +203,7 @@ export default function AboutPage() {
           5. VISION / DIRECTION
           ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="inst-card p-8 sm:p-12 text-center flex flex-col items-center bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 border-sky-500/20">
+        <div className="inst-card p-8 sm:p-12 text-center flex flex-col items-center bg-linear-to-br from-slate-900 via-slate-950 to-slate-900 border-sky-500/20">
           
           <div className="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 mb-6">
             <Compass className="w-6 h-6" />
