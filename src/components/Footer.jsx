@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowUpRight, HeartHandshake, ShieldCheck } from 'lucide-react';
 import { ORGANIZATION_DATA } from '../data/organization';
 import { FOOTER_SECTIONS } from '../data/navigation';
-import cesLogo from '../assets/logo/ces-logo.svg';
+import cesLogo from '../assets/logo/ces-logo-white.svg';
 
 export default function Footer() {
   return (
