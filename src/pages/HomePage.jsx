@@ -270,7 +270,7 @@ export default function HomePage() {
       <TrainerSpotlight />
 
       {/* ==================================================
-          4. OUR REACH (Static South India Visual)
+          4. OUR REACH (Pan-India Presence)
           ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="inst-card p-6 sm:p-10">
@@ -293,25 +293,48 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Static 5 States Grid Representation */}
+            {/* Pan-India Operational Highlights */}
             <div className="lg:col-span-7">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {ORGANIZATION_DATA.statesCovered.map((state) => (
-                  <div
-                    key={state.code}
-                    className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between"
-                  >
-                    <div className="flex items-center gap-3">
-                      <div className="w-9 h-9 rounded-lg bg-sky-500/10 border border-sky-500/20 text-sky-400 font-bold text-xs flex items-center justify-center">
-                        {state.code}
-                      </div>
-                      <span className="text-sm font-semibold text-slate-200">
-                        {state.name}
-                      </span>
-                    </div>
-                    <span className="text-xs text-slate-500 font-medium">Documented Focus State</span>
+                <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-lg bg-sky-500/10 border border-sky-500/20 text-sky-400 font-bold text-xs flex items-center justify-center shrink-0">
+                    6M+
                   </div>
-                ))}
+                  <div>
+                    <span className="text-sm font-semibold text-slate-200 block">6.12M+ Students</span>
+                    <span className="text-xs text-slate-400">Cumulative trained total</span>
+                  </div>
+                </div>
+
+                <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-bold text-xs flex items-center justify-center shrink-0">
+                    6K+
+                  </div>
+                  <div>
+                    <span className="text-sm font-semibold text-slate-200 block">6,000+ Institutions</span>
+                    <span className="text-xs text-slate-400">Annual institutional reach</span>
+                  </div>
+                </div>
+
+                <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 font-bold text-xs flex items-center justify-center shrink-0">
+                    50+
+                  </div>
+                  <div>
+                    <span className="text-sm font-semibold text-slate-200 block">50+ Training Teams</span>
+                    <span className="text-xs text-slate-400">CES awareness initiatives across India</span>
+                  </div>
+                </div>
+
+                <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 font-bold text-xs flex items-center justify-center shrink-0">
+                    FREE
+                  </div>
+                  <div>
+                    <span className="text-sm font-semibold text-slate-200 block">No Student Fees</span>
+                    <span className="text-xs text-slate-400">Conducted free of charge</span>
+                  </div>
+                </div>
 
                 {/* Regional Summary Badge */}
                 <div className="p-4 rounded-xl bg-gradient-to-r from-sky-950/60 to-slate-900 border border-sky-500/30 flex items-center justify-between sm:col-span-2">
@@ -321,7 +344,7 @@ export default function HomePage() {
                     </div>
                     <div>
                       <div className="text-sm font-bold text-slate-100">Pan-India Operations</div>
-                      <div className="text-xs text-slate-400">Sessions across educational institutions</div>
+                      <div className="text-xs text-slate-400">Sessions across educational institutions nationwide</div>
                     </div>
                   </div>
                   <span className="text-xs font-semibold text-emerald-400">Free of charge</span>

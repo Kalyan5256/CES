@@ -326,7 +326,7 @@ export default function AboutPage() {
         <div className="inst-card p-8 sm:p-12 text-center flex flex-col items-center">
           
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-100 mb-4">
-            Discover Our Reach & Impact
+            Discover Reach & Impact
           </h2>
 
           <p className="text-xs sm:text-sm text-slate-400 max-w-lg mb-8 leading-relaxed">

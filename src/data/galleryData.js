@@ -37,7 +37,7 @@ export const GALLERY_ITEMS = [
   },
   {
     id: "g5",
-    title: "Regional Campaign Operations",
+    title: "CES Campaign Session",
     categoryLabel: "Youth Development",
     aspectRatio: "aspect-[4/3]",
     colSpan: "lg:col-span-1",

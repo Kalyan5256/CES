@@ -11,13 +11,6 @@ export const ORGANIZATION_DATA = {
   costToStudents: "Free of charge",
   targetAudience: "Young minds and students",
   geographicFocus: "Pan-India",
-  statesCovered: [
-    { name: "Andhra Pradesh", code: "AP" },
-    { name: "Telangana", code: "TG" },
-    { name: "Tamil Nadu", code: "TN" },
-    { name: "Karnataka", code: "KA" },
-    { name: "Kerala", code: "KL" }
-  ],
   corePillars: [
     {
       id: "awareness",
