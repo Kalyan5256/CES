@@ -24,7 +24,7 @@ export default function TrainerSpotlight() {
             </h2>
 
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6 font-normal">
-              More than 50 trainers contribute to CES awareness initiatives across South India.
+              More than 50 trainers contribute to CES awareness and youth development initiatives across India.
             </p>
 
             {/* High Impact Typographic Display Box */}
@@ -38,7 +38,7 @@ export default function TrainerSpotlight() {
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed border-t border-slate-800/80 pt-3">
-                Facilitating interactive awareness sessions in intermediate colleges across South India during the two-month annual campaign period.
+                Facilitating interactive awareness sessions in intermediate institutions across India during the two-month annual campaign period.
               </p>
               <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400 pt-1">
                 <ShieldCheck className="w-4 h-4 shrink-0" />

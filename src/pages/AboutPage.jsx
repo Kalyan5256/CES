@@ -38,7 +38,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-base sm:text-xl text-slate-300 leading-relaxed font-normal mb-8">
-            Chundi Educational Society (CES) is an NGO established in 2009 focused on creating awareness among intermediate second-year students about the dangers of drugs, smoking, alcohol, and other harmful habits.
+            Founded by Dr. Surya Chundi in 2009, Chundi Educational Society (CES) is focused on youth empowerment and development through education, awareness, and life skills training.
           </p>
 
           <div className="flex flex-wrap items-center gap-6 pt-6 border-t border-slate-800/80 text-xs sm:text-sm font-medium text-slate-400 w-full">
@@ -52,7 +52,7 @@ export default function AboutPage() {
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-amber-400" />
-              <span>South India Geographic Focus</span>
+              <span>Pan-India Focus</span>
             </div>
           </div>
         </div>
@@ -74,10 +74,10 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-sm sm:text-base text-slate-300 leading-relaxed">
                 <p>
-                  Chundi Educational Society (CES) is an NGO established in 2009. Its mission is to create awareness among intermediate second-year students about the dangers of drugs, smoking, alcohol, and other harmful habits.
+                  Founded by Dr. Surya Chundi, Chundi Educational Society (CES) is an NGO established in 2009. Its mission focuses on youth empowerment and development, equipping students with critical life skills and awareness to build responsible futures.
                 </p>
                 <p>
-                  For the past 17 years, CES has conducted motivational and awareness sessions across educational institutions in South India. All activities are conducted free of charge — no fees are collected from students, parents, or educational institutions.
+                  For the past 17 years, CES has conducted motivational and educational sessions across institutions in India. All activities are conducted free of charge.
                 </p>
               </div>
             </div>
@@ -152,11 +152,11 @@ export default function AboutPage() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-sky-400 mt-2 shrink-0" />
-                <span>Focus on drug, smoking & alcohol awareness</span>
+                <span>Focus on youth empowerment and development</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-sky-400 mt-2 shrink-0" />
-                <span>Educational institution sessions in South India</span>
+                <span>Educational institution sessions across India</span>
               </li>
             </ul>
           </div>
@@ -172,7 +172,7 @@ export default function AboutPage() {
           <SectionHeader
             badge="Organizational Mission"
             title="Our Mission & Purpose"
-            description="Create awareness among intermediate second-year students about the dangers of drugs, smoking, alcohol, and other harmful habits."
+            description="Empower young people through education, awareness, motivation, life skills, leadership, career direction, and responsible citizenship."
             align="left"
             className="mb-8"
           />
@@ -183,7 +183,7 @@ export default function AboutPage() {
                 Student Awareness
               </h3>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Conducting motivational sessions to educate intermediate second-year students on the dangers of drug use, smoking, alcohol, and harmful habits.
+                Conducting motivational sessions to focus on youth empowerment and development, guiding students toward purposeful futures.
               </p>
             </div>
 
@@ -214,11 +214,11 @@ export default function AboutPage() {
           </span>
 
           <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-100 max-w-2xl leading-tight mb-4">
-            "Empowering Students for a Drug-Free Future"
+            "Empowering Young Minds. Building Responsible Futures."
           </h2>
 
           <p className="text-xs sm:text-sm text-slate-400 max-w-xl leading-relaxed">
-            Building awareness and supporting students during their transition from school life to higher education.
+            Building youth empowerment and development to support students during their transition to higher education.
           </p>
         </div>
       </section>
@@ -260,7 +260,7 @@ export default function AboutPage() {
                 <span className="text-3xl font-extrabold title-gradient block mb-1">17+</span>
                 <h3 className="text-base font-bold text-slate-100 mb-2">Years of Service</h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  17 years of conducting motivational and awareness sessions in South India.
+                  17 years of conducting motivational and educational sessions across India.
                 </p>
               </div>
             </div>
@@ -268,9 +268,9 @@ export default function AboutPage() {
             <div className="p-6 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between">
               <div>
                 <span className="text-3xl font-extrabold text-sky-400 block mb-1">50+</span>
-                <h3 className="text-base font-bold text-slate-100 mb-2">Trainers</h3>
+                <h3 className="text-base font-bold text-slate-100 mb-2">Training Teams</h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Number of trainers conducting sessions across educational institutions.
+                  Active training teams conducting sessions across 6,000+ educational institutions annually.
                 </p>
               </div>
             </div>
@@ -287,7 +287,7 @@ export default function AboutPage() {
         <SectionHeader
           badge="Verified Metrics"
           title="Social Impact"
-          description="Documented figures from 17+ years of awareness sessions in South India."
+          description="Documented figures from 17+ years of youth empowerment sessions across India."
           className="mb-10"
         />
 
@@ -300,8 +300,8 @@ export default function AboutPage() {
           />
           <ImpactStat
             value="50+"
-            label="Trainers"
-            sublabel="Conducting awareness sessions"
+            label="Training Teams"
+            sublabel="Conducting Pan-India sessions"
             icon={Users}
           />
           <ImpactStat
@@ -326,19 +326,19 @@ export default function AboutPage() {
         <div className="inst-card p-8 sm:p-12 text-center flex flex-col items-center">
           
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-100 mb-4">
-            Discover Our Reach & Impact
+            Discover Reach & Impact
           </h2>
 
           <p className="text-xs sm:text-sm text-slate-400 max-w-lg mb-8 leading-relaxed">
-            Explore documented figures regarding CES's institutional reach across South India or view campaign visual frames.
+            Explore documented figures regarding CES's institutional reach across India or view campaign visual frames.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
             <Button to="/impact" variant="primary" size="lg" icon={ArrowRight} className="w-full sm:w-auto">
-              Our Reach & Impact
+              Reach & Impact
             </Button>
             <Button to="/gallery" variant="secondary" size="lg" className="w-full sm:w-auto">
-              Gallery
+              Campaign Archive
             </Button>
           </div>
 

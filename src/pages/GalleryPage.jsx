@@ -40,15 +40,15 @@ export default function GalleryPage() {
         <div className="flex flex-col items-start max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full badge-institutional text-xs sm:text-sm font-semibold uppercase tracking-wider mb-6">
             <ShieldCheck className="w-4 h-4 text-sky-400 shrink-0" />
-            <span>Campaign Documentation</span>
+            <span>Campaign</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-100 leading-[1.15] mb-6">
-            Stories From <span className="title-gradient">The Field</span>
+            Campaign <span className="title-gradient">Archive</span>
           </h1>
 
           <p className="text-base sm:text-xl text-slate-300 leading-relaxed font-normal mb-8">
-            CES has conducted awareness sessions across educational institutions in South India since 2009. This gallery will serve as a visual record of that work.
+            Explore selected moments from CES awareness, student development and educational initiatives across India.
           </p>
 
           <div className="flex flex-wrap items-center gap-6 pt-6 border-t border-slate-800/80 text-xs sm:text-sm font-medium text-slate-400 w-full">
@@ -58,7 +58,7 @@ export default function GalleryPage() {
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-sky-400" />
-              <span>South India Focus</span>
+              <span>Nationwide Outreach</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-amber-400" />
@@ -163,8 +163,8 @@ export default function GalleryPage() {
 
               {/* Card Footer Metadata */}
               <div className="mt-4 flex items-center justify-between text-xs text-slate-400 px-1 pt-1">
-                <span>Awareness Session Frame</span>
-                <span className="text-sky-400 font-medium">South India</span>
+                <span>CES Campaign</span>
+                <span className="text-slate-400 font-medium">Field Photograph</span>
               </div>
             </div>
           ))}
@@ -233,12 +233,12 @@ export default function GalleryPage() {
           </h2>
 
           <p className="text-xs sm:text-sm text-slate-400 max-w-lg mb-8 leading-relaxed">
-            Explore documented figures regarding CES's institutional reach across South India or read about the organization.
+            Explore documented figures regarding CES's institutional reach across India or read about the organization.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
             <Button to="/impact" variant="primary" size="lg" icon={ArrowRight} className="w-full sm:w-auto">
-              Our Reach & Impact
+              Reach & Impact
             </Button>
             <Button to="/about" variant="secondary" size="lg" className="w-full sm:w-auto">
               About CES

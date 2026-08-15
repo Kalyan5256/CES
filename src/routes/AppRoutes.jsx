@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import MainLayout from '../layouts/MainLayout';
 import HomePage from '../pages/HomePage';
 import AboutPage from '../pages/AboutPage';
+import Programs from '../pages/Programs';
 import ImpactPage from '../pages/ImpactPage';
 import GalleryPage from '../pages/GalleryPage';
 import ContactPage from '../pages/ContactPage';
@@ -14,6 +15,7 @@ export default function AppRoutes() {
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />
+        <Route path="programs" element={<Programs />} />
         <Route path="impact" element={<ImpactPage />} />
         <Route path="gallery" element={<GalleryPage />} />
         <Route path="contact" element={<ContactPage />} />

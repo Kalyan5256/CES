@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
-import { Menu, X, ArrowRight, ShieldCheck } from 'lucide-react';
+import { Menu, X, ShieldCheck } from 'lucide-react';
 import { NAV_LINKS } from '../data/navigation';
 import cesLogo from '../assets/logo/ces-logo-white.svg';
 
@@ -66,13 +66,6 @@ export default function Navbar() {
               <ShieldCheck className="w-3.5 h-3.5" />
               <span>Est. 2009</span>
             </div>
-            <Link
-              to="/impact"
-              className="inline-flex items-center gap-2 text-xs uppercase tracking-wider font-bold px-4 py-2.5 rounded-full bg-sky-500 hover:bg-sky-400 text-slate-950 transition-all shadow-md shadow-sky-500/20 hover:shadow-sky-400/30"
-            >
-              <span>Our Reach & Impact</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -107,15 +100,7 @@ export default function Navbar() {
                 {link.label}
               </NavLink>
             ))}
-            <div className="pt-3 border-t border-slate-800 flex flex-col gap-2 mt-2">
-              <Link
-                to="/impact"
-                className="flex items-center justify-center gap-2 w-full text-sm font-bold px-4 py-3.5 rounded-xl bg-sky-500 text-slate-950 min-h-[44px]"
-              >
-                <span>View Our Reach & Impact</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+            {/* CTA Removed for V2 */}
           </nav>
         </div>
       )}
