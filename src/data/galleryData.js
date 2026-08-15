@@ -38,7 +38,7 @@ export const GALLERY_ITEMS = [
   {
     id: "g5",
     title: "Regional Campaign Operations",
-    categoryLabel: "South India Focus",
+    categoryLabel: "Youth Development",
     aspectRatio: "aspect-[4/3]",
     colSpan: "lg:col-span-1",
     featured: false,

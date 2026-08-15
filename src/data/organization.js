@@ -1,14 +1,16 @@
 export const ORGANIZATION_DATA = {
   name: "Chundi Educational Society",
   shortName: "CES",
-  tagline: "Empowering Students for a Drug-Free Future Since 2009",
+  founder: "Dr. Surya Chundi",
+  tagline: "Empowering Young Minds. Building Responsible Futures.",
   establishedYear: 2009,
   yearsOfService: "17+",
   trainersCount: "50+",
   studentsTrained: "6.12M+",
+  institutionsAnnually: "6,000+",
   costToStudents: "Free of charge",
-  targetAudience: "Intermediate second-year students",
-  geographicFocus: "South India",
+  targetAudience: "Young minds and students",
+  geographicFocus: "Pan-India",
   statesCovered: [
     { name: "Andhra Pradesh", code: "AP" },
     { name: "Telangana", code: "TG" },
@@ -18,24 +20,24 @@ export const ORGANIZATION_DATA = {
   ],
   corePillars: [
     {
-      id: "drugs",
-      title: "Drug Awareness",
-      description: "Educating second-year intermediate students on the severe personal, legal, and health risks associated with substance abuse."
+      id: "awareness",
+      title: "Awareness & Prevention",
+      description: "Drug and substance abuse awareness, smoking/tobacco awareness, alcohol awareness, harmful habits, and peer-pressure awareness."
     },
     {
-      id: "smoking",
-      title: "Anti-Smoking Awareness",
-      description: "De-glamorizing tobacco and nicotine addiction through evidence-based motivational and health insights."
+      id: "personal-dev",
+      title: "Personal Development",
+      description: "Building confidence, communication, life skills, personality development, discipline, goal setting, and time management."
     },
     {
-      id: "alcohol",
-      title: "Alcohol Awareness",
-      description: "Guiding young adults away from peer pressure and early alcohol consumption before transitioning to higher education."
+      id: "future-ready",
+      title: "Future Readiness",
+      description: "Focusing on career planning, leadership, skill development, entrepreneurship, innovation, and professional growth."
     },
     {
-      id: "habits",
-      title: "Harmful Habits & Responsible Choices",
-      description: "Empowering youth with critical decision-making tools to build resilience against harmful behavioral traps."
+      id: "citizenship",
+      title: "Responsible Citizenship",
+      description: "Instilling road safety, law awareness, values, ethics, social responsibility, and responsible citizenship."
     }
   ]
 };

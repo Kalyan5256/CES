@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import SectionHeader from '../components/SectionHeader';
 import Button from '../components/Button';
 import ImpactStat from '../components/ImpactStat';
-import CoverageExplorer from '../components/CoverageExplorer';
+import StaticReachMap from '../components/StaticReachMap';
 import { ORGANIZATION_DATA } from '../data/organization';
 import {
   ArrowRight,
@@ -34,15 +34,15 @@ export default function ImpactPage() {
         <div className="flex flex-col items-start max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full badge-institutional text-xs sm:text-sm font-semibold uppercase tracking-wider mb-6">
             <ShieldCheck className="w-4 h-4 text-sky-400 shrink-0" />
-            <span>Documented Social Reach & Impact</span>
+            <span>Reach & Impact</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-100 leading-[1.15] mb-6">
-            17+ Years of <span className="title-gradient">Creating Awareness</span>
+            17+ Years of <span className="title-gradient">Empowering Youth</span>
           </h1>
 
           <p className="text-base sm:text-xl text-slate-300 leading-relaxed font-normal mb-8">
-            Documenting Chundi Educational Society's sustained initiative across educational institutions in South India, reaching intermediate second-year students with awareness programs since 2009.
+            Documenting Chundi Educational Society's sustained nationwide initiative across educational institutions and communities throughout India, reaching students with awareness, life skills, and development programs since 2009.
           </p>
 
           <div className="flex flex-wrap items-center gap-6 pt-6 border-t border-slate-800/80 text-xs sm:text-sm font-medium text-slate-400 w-full">
@@ -56,7 +56,7 @@ export default function ImpactPage() {
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-amber-400" />
-              <span>South India Geographic Focus</span>
+              <span>Pan-India Operations</span>
             </div>
           </div>
         </div>
@@ -86,21 +86,21 @@ export default function ImpactPage() {
             />
             <ImpactStat
               value="50+"
-              label="Trainers"
-              sublabel="Number of trainers"
+              label="Training Teams"
+              sublabel="Number of active teams"
               icon={Users}
+            />
+            <ImpactStat
+              value="6,000+"
+              label="Institutions Annually"
+              sublabel="Educational outreach"
+              icon={School}
             />
             <ImpactStat
               value="17+"
               label="Years of Service"
               sublabel="Years of operation"
               icon={Award}
-            />
-            <ImpactStat
-              value="2009"
-              label="Year Established"
-              sublabel="Founded in 2009"
-              icon={Calendar}
             />
           </div>
 
@@ -134,22 +134,22 @@ export default function ImpactPage() {
             <div className="p-6 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between">
               <div>
                 <span className="text-3xl sm:text-4xl font-extrabold text-slate-100 block mb-1">50+</span>
-                <div className="text-sm font-bold text-sky-400 mb-2">Number of Trainers</div>
+                <div className="text-sm font-bold text-sky-400 mb-2">Training Teams</div>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Trainers conducting awareness sessions.
+                  Dedicated teams conducting sessions across institutions.
                 </p>
               </div>
               <div className="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-500 font-medium">
-                Documented Trainer Count
+                Active Training Teams
               </div>
             </div>
 
             <div className="p-6 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between">
               <div>
                 <span className="text-3xl sm:text-4xl font-extrabold text-slate-100 block mb-1">2</span>
-                <div className="text-sm font-bold text-sky-400 mb-2">Average Sessions per Trainer per Day</div>
+                <div className="text-sm font-bold text-sky-400 mb-2">Average Sessions per Team per Day</div>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Average sessions per trainer per day.
+                  Average sessions per team per day.
                 </p>
               </div>
               <div className="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-500 font-medium">
@@ -195,10 +195,10 @@ export default function ImpactPage() {
       </section>
 
       {/* ==================================================
-          4. COVERAGE EXPLORER (Interactive 5 Southern States & Future Archive)
+          4. REACH ACROSS INDIA (Static Decorative Pan-India Vector Map)
           ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <CoverageExplorer />
+        <StaticReachMap />
       </section>
 
       {/* ==================================================
@@ -223,7 +223,7 @@ export default function ImpactPage() {
                 Educational Institutions
               </h3>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Conducting sessions across educational institutions in South India.
+                Conducting sessions across educational institutions and communities across India.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-800 text-[11px] text-slate-500 font-medium">
@@ -362,7 +362,7 @@ export default function ImpactPage() {
         <div className="inst-card p-8 sm:p-12 text-center flex flex-col items-center border-sky-500/20">
           
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-100 mb-4">
-            Explore Gallery & Organization Details
+            Explore Campaign Archive & Organization Details
           </h2>
 
           <p className="text-xs sm:text-sm text-slate-400 max-w-lg mb-8 leading-relaxed">
@@ -371,7 +371,7 @@ export default function ImpactPage() {
 
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
             <Button to="/gallery" variant="primary" size="lg" icon={ArrowRight} className="w-full sm:w-auto">
-              Gallery
+              Campaign Archive
             </Button>
             <Button to="/about" variant="secondary" size="lg" className="w-full sm:w-auto">
               About CES

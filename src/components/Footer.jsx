@@ -32,7 +32,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-md">
-              Creating high-impact awareness among intermediate second-year students across South India regarding the critical dangers of drugs, smoking, alcohol, and harmful habits.
+              Creating high-impact youth empowerment and development programs across educational institutions in India.
             </p>
 
             <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -74,7 +74,7 @@ export default function Footer() {
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>© {ORGANIZATION_DATA.establishedYear}–{new Date().getFullYear()} Chundi Educational Society (CES). All rights reserved.</p>
           <div className="flex items-center gap-6 text-slate-400">
-            <span>South India Regional Coverage</span>
+            <span>Pan-India Operations</span>
             <span className="w-1 h-1 rounded-full bg-slate-700" />
             <Link to="/contact" className="hover:text-sky-400 transition-colors">Contact Organization</Link>
           </div>

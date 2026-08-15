@@ -35,7 +35,7 @@ export default function ContactPage() {
           </h1>
 
           <p className="text-base sm:text-xl text-slate-300 leading-relaxed font-normal mb-8">
-            For educational institutions, community partners, or stakeholders interested in learning more about Chundi Educational Society and its student awareness initiatives.
+            For educational institutions, community partners, or stakeholders interested in learning more about Chundi Educational Society and its four core program areas.
           </p>
 
           <div className="flex flex-wrap items-center gap-6 pt-6 border-t border-slate-800/80 text-xs sm:text-sm font-medium text-slate-400 w-full">
@@ -45,7 +45,7 @@ export default function ContactPage() {
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-sky-400" />
-              <span>South India Focus</span>
+              <span>Pan-India Operations</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-amber-400" />
@@ -71,7 +71,7 @@ export default function ContactPage() {
                 Connecting with Institutions & Stakeholders
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                CES conducts awareness programs for intermediate second-year students across South India. All activities are conducted free of charge — no fees are collected from students, parents, or educational institutions.
+                CES conducts educational and development programs for youth across India. All activities are conducted free of charge — no fees are collected from students, parents, or educational institutions.
               </p>
             </div>
 
@@ -255,12 +255,12 @@ export default function ContactPage() {
           </h2>
 
           <p className="text-xs sm:text-sm text-slate-400 max-w-lg mb-8 leading-relaxed">
-            Discover documented figures regarding CES's institutional reach across South India or read about Chundi Educational Society.
+            Discover documented figures regarding CES's institutional reach across India or read about Chundi Educational Society.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
             <Button to="/impact" variant="primary" size="lg" icon={ArrowRight} className="w-full sm:w-auto">
-              Our Reach & Impact
+              Reach & Impact
             </Button>
             <Button to="/about" variant="secondary" size="lg" className="w-full sm:w-auto">
               About CES

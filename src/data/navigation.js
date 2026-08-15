@@ -1,8 +1,9 @@
 export const NAV_LINKS = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
-  { label: "Our Reach & Impact", path: "/impact" },
-  { label: "Gallery", path: "/gallery" },
+  { label: "Programs", path: "/programs" },
+  { label: "Impact", path: "/impact" },
+  { label: "Campaign", path: "/gallery" },
   { label: "Contact", path: "/contact" }
 ];
 
@@ -11,27 +12,26 @@ export const FOOTER_SECTIONS = [
     title: "Organization",
     links: [
       { label: "About CES", path: "/about" },
-      { label: "Our Reach & Impact", path: "/impact" },
-      { label: "Gallery", path: "/gallery" }
+      { label: "Programs", path: "/programs" },
+      { label: "Impact", path: "/impact" },
+      { label: "Campaign Archive", path: "/gallery" }
     ]
   },
   {
     title: "Focus Areas",
     links: [
-      { label: "Drug Awareness", path: "/#focus" },
-      { label: "Anti-Smoking", path: "/#focus" },
-      { label: "Alcohol Awareness", path: "/#focus" },
-      { label: "Responsible Choices", path: "/#focus" }
+      { label: "Awareness & Prevention", path: "/programs" },
+      { label: "Personal Development", path: "/programs" },
+      { label: "Future Readiness", path: "/programs" },
+      { label: "Responsible Citizenship", path: "/programs" }
     ]
   },
   {
-    title: "Reach & Region",
+    title: "Our Reach",
     links: [
-      { label: "Andhra Pradesh", path: "/impact#reach" },
-      { label: "Telangana", path: "/impact#reach" },
-      { label: "Tamil Nadu", path: "/impact#reach" },
-      { label: "Karnataka", path: "/impact#reach" },
-      { label: "Kerala", path: "/impact#reach" }
+      { label: "Pan-India Reach", path: "/impact" },
+      { label: "Educational Institutions", path: "/impact" },
+      { label: "Campaign Operations", path: "/impact" }
     ]
   }
 ];
