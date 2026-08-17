@@ -1,5 +1,5 @@
 import React from 'react';
-import { Globe, ShieldCheck, School, Users } from 'lucide-react';
+import { Globe, HeartHandshake, School, Users } from 'lucide-react';
 import indiaSvg from '../assets/maps/india.svg';
 
 export default function StaticReachMap() {
@@ -66,7 +66,7 @@ export default function StaticReachMap() {
                 <School className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-base font-bold text-slate-100">6,000+ Institutions</h3>
+                <h3 className="text-base font-bold text-slate-100">6,000+ Institutions Reached Annually</h3>
                 <span className="text-xs text-sky-400 font-medium">Annual Institutional Outreach</span>
               </div>
             </div>
@@ -81,27 +81,27 @@ export default function StaticReachMap() {
                 <Users className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-base font-bold text-slate-100">50+ Training Teams</h3>
-                <span className="text-xs text-emerald-400 font-medium">Dedicated Operational Field Teams</span>
+                <h3 className="text-base font-bold text-slate-100">50+ Motivational Speakers</h3>
+                <span className="text-xs text-emerald-400 font-medium">Active Speaker Network</span>
               </div>
             </div>
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-              Active training teams delivering structured, high-impact sessions directly to students in classroom and seminar environments.
+              Dedicated motivational speakers delivering structured, high-impact sessions directly to students in classroom and seminar environments.
             </p>
           </div>
 
           <div className="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 flex flex-col gap-3">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 shrink-0">
-                <ShieldCheck className="w-5 h-5" />
+                <HeartHandshake className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-base font-bold text-slate-100">No Student Fees</h3>
-                <span className="text-xs text-amber-400 font-medium">Zero-Cost Model</span>
+                <h3 className="text-base font-bold text-slate-100">Service Beyond Commercialisation</h3>
+                <span className="text-xs text-amber-400 font-medium">Social Impact Focus</span>
               </div>
             </div>
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-              CES awareness initiatives are conducted without fees charged to students, parents, or educational institutions.
+              CES has always focused on creating meaningful social impact, without commercially benefiting from its awareness and life-skills initiatives.
             </p>
           </div>
 

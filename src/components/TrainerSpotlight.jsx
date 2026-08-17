@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, GraduationCap, Compass, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { Users, GraduationCap, Compass, ShieldCheck, CheckCircle2, HeartHandshake } from 'lucide-react';
 
 export default function TrainerSpotlight() {
   return (
@@ -16,7 +16,7 @@ export default function TrainerSpotlight() {
             
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full badge-institutional text-xs font-semibold uppercase tracking-wider mb-4">
               <Users className="w-3.5 h-3.5 text-sky-400 shrink-0" />
-              <span>Operational Team Scale</span>
+              <span>Motivational Speaker Network</span>
             </div>
 
             <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-100 mb-4 leading-tight">
@@ -24,7 +24,7 @@ export default function TrainerSpotlight() {
             </h2>
 
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6 font-normal">
-              More than 50 trainers contribute to CES awareness and youth development initiatives across India.
+              More than 50 motivational speakers contribute to CES awareness, life skills, and youth empowerment initiatives across India.
             </p>
 
             {/* High Impact Typographic Display Box */}
@@ -34,21 +34,21 @@ export default function TrainerSpotlight() {
                   50+
                 </span>
                 <span className="text-lg sm:text-xl font-bold text-slate-100">
-                  Active Trainers
+                  Motivational Speakers
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed border-t border-slate-800/80 pt-3">
-                Facilitating interactive awareness sessions in intermediate institutions across India during the two-month annual campaign period.
+                Facilitating interactive motivational and awareness sessions in institutions across India during annual campaign operations.
               </p>
               <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400 pt-1">
                 <ShieldCheck className="w-4 h-4 shrink-0" />
-                <span>Verified Operational Metric (Section 1.2)</span>
+                <span>Verified Operational Scale</span>
               </div>
             </div>
 
           </div>
 
-          {/* Right Column: Editorial Pillars of Trainer Role */}
+          {/* Right Column: Editorial Pillars */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
             
             <div className="p-5 sm:p-6 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-colors">
@@ -60,12 +60,12 @@ export default function TrainerSpotlight() {
                   Institutional Delivery
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                  Trainers conduct interactive sessions tailored specifically for intermediate second-year students across high schools and junior colleges.
+                  Speakers conduct interactive sessions tailored specifically for young people across high schools, intermediate colleges, and institutions.
                 </p>
               </div>
               <div className="mt-4 pt-3 border-t border-slate-800/80 text-[11px] text-slate-500 font-medium flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-sky-400" />
-                <span>2 Sessions per Trainer / Day</span>
+                <span>2 Sessions a Day</span>
               </div>
             </div>
 
@@ -75,15 +75,15 @@ export default function TrainerSpotlight() {
                   <Compass className="w-5 h-5" />
                 </div>
                 <h3 className="text-base font-bold text-slate-100 mb-2">
-                  Preventative Guidance
+                  Life Skills & Guidance
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                  Focusing on life skills, decision-making, and early intervention regarding the dangers of drugs, tobacco, and alcohol.
+                  Focusing on motivation, life skills, decision-making, leadership, personality development, and substance abuse awareness.
                 </p>
               </div>
               <div className="mt-4 pt-3 border-t border-slate-800/80 text-[11px] text-slate-500 font-medium flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-amber-400" />
-                <span>60+ Students per Session</span>
+                <span>60 Students per Session</span>
               </div>
             </div>
 
@@ -91,14 +91,15 @@ export default function TrainerSpotlight() {
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
                   <h3 className="text-base font-bold text-slate-100 mb-1">
-                    Institutional Commitment & Free Delivery
+                    Service Beyond Commercialisation
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-xl">
-                    Trainers participate as part of Chundi Educational Society's non-commercial mission. No fees are ever collected from institutions or students.
+                    CES has always focused on creating meaningful social impact, without commercially benefiting from its awareness and life-skills initiatives.
                   </p>
                 </div>
-                <span className="text-xs font-semibold px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 shrink-0 self-start sm:self-center">
-                  Free of charge
+                <span className="text-xs font-semibold px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 shrink-0 self-start sm:self-center flex items-center gap-1.5">
+                  <HeartHandshake className="w-3.5 h-3.5" />
+                  Social Mission
                 </span>
               </div>
             </div>

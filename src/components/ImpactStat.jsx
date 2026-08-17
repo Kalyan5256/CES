@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ImpactStat({ value, label, sublabel, icon: Icon }) {
   return (
-    <div className="glass-panel glass-panel-hover p-6 sm:p-8 rounded-2xl flex flex-col items-start relative overflow-hidden group">
+    <div className="inst-card p-6 sm:p-8 flex flex-col items-start relative overflow-hidden group">
       {/* Background ambient lighting */}
       <div className="absolute top-0 right-0 w-32 h-32 bg-sky-500/5 rounded-full blur-2xl group-hover:bg-sky-500/10 transition-colors pointer-events-none" />
       
@@ -12,7 +12,7 @@ export default function ImpactStat({ value, label, sublabel, icon: Icon }) {
         </div>
       )}
 
-      <div className="text-4xl sm:text-5xl font-extrabold hero-gradient-text tracking-tight mb-2">
+      <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold title-gradient tracking-tight mb-2">
         {value}
       </div>
 

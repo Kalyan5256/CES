@@ -17,7 +17,9 @@ import {
   Clock,
   School,
   CheckCircle2,
-  GraduationCap
+  GraduationCap,
+  Sparkles,
+  Calculator
 } from 'lucide-react';
 
 export default function ImpactPage() {
@@ -34,73 +36,79 @@ export default function ImpactPage() {
         <div className="flex flex-col items-start max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full badge-institutional text-xs sm:text-sm font-semibold uppercase tracking-wider mb-6">
             <ShieldCheck className="w-4 h-4 text-sky-400 shrink-0" />
-            <span>Reach & Impact</span>
+            <span>Documented Institutional Reach</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-100 leading-[1.15] mb-6">
-            17+ Years of <span className="title-gradient">Empowering Youth</span>
+            15 Years of <span className="title-gradient">Empowering Youth</span>
           </h1>
 
           <p className="text-base sm:text-xl text-slate-300 leading-relaxed font-normal mb-8">
-            Documenting Chundi Educational Society's sustained nationwide initiative across educational institutions and communities throughout India, reaching students with awareness, life skills, and development programs since 2009.
+            Documenting Chundi Educational Society's sustained nationwide initiative across educational institutions throughout India — impacting students with awareness, motivation, life skills, and future readiness since 2009.
           </p>
 
           <div className="flex flex-wrap items-center gap-6 pt-6 border-t border-slate-800/80 text-xs sm:text-sm font-medium text-slate-400 w-full">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400" />
-              <span>6.12M+ Students Trained</span>
+              <span>5.4M+ Students Impacted</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-sky-400" />
-              <span>Free of charge</span>
+              <span>50+ Motivational Speakers</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-amber-400" />
-              <span>Pan-India Operations</span>
+              <span>6,000+ Institutions Annually</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* ==================================================
-          2. IMPACT AT A GLANCE (Dominant Primary Figures)
+          2. IMPACT AT A GLANCE (Primary Operational Figures)
           ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="inst-card p-6 sm:p-10 border-slate-800">
           
-          <div className="mb-8">
-            <span className="text-xs font-semibold uppercase tracking-widest text-sky-400 block mb-1">
-              Verified Cumulative Scale
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-100">
-              Impact at a Glance
-            </h2>
+          <div className="mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <span className="text-xs font-semibold uppercase tracking-widest text-sky-400 block mb-1">
+                Verified Cumulative Scale
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-bold text-slate-100">
+                Impact at a Glance
+              </h2>
+            </div>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full badge-gold text-xs font-semibold uppercase tracking-wider self-start sm:self-center">
+              <Sparkles className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <span>{ORGANIZATION_DATA.visionStatement}</span>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <ImpactStat
-              value="6.12M+"
-              label="Students Trained"
-              sublabel="Cumulative trained total"
+              value="5.4M+"
+              label="Students Impacted"
+              sublabel="Cumulative reach across 15 years"
               icon={BookOpen}
             />
             <ImpactStat
               value="50+"
-              label="Training Teams"
-              sublabel="Number of active teams"
+              label="Motivational Speakers"
+              sublabel="Active nationwide network"
               icon={Users}
             />
             <ImpactStat
               value="6,000+"
               label="Institutions Annually"
-              sublabel="Educational outreach"
+              sublabel="Educational outreach programs"
               icon={School}
             />
             <ImpactStat
-              value="17+"
-              label="Years of Service"
-              sublabel="Years of operation"
-              icon={Award}
+              value="200,000+"
+              label="Additional Students"
+              sublabel="Through P.U. Colleges & Universities"
+              icon={GraduationCap}
             />
           </div>
 
@@ -108,87 +116,132 @@ export default function ImpactPage() {
       </section>
 
       {/* ==================================================
-          3. THE SCALE OF THE WORK (Documented Operational Metrics)
+          3. THE SCALE OF CES (Dedicated Calculation Section)
           ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="inst-card p-6 sm:p-12 relative overflow-hidden">
+        <div className="inst-card p-6 sm:p-12 relative overflow-hidden border-sky-500/30 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900">
           
-          <div className="flex flex-col items-start max-w-2xl mb-10">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-gold text-xs font-semibold uppercase tracking-wider mb-4">
-              <Clock className="w-3.5 h-3.5 text-amber-400" />
-              <span>Project Documentation Metrics</span>
+          <div className="flex flex-col items-start max-w-3xl mb-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-institutional text-xs font-semibold uppercase tracking-wider mb-4">
+              <Calculator className="w-3.5 h-3.5 text-sky-400" />
+              <span>Verified Operational Methodology</span>
             </div>
 
-            <h2 className="text-2xl sm:text-4xl font-bold text-slate-100 leading-tight mb-4">
-              The Scale of the Work
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-100 leading-tight mb-4">
+              The Scale of CES
             </h2>
 
-            <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-              Operational parameters as explicitly stated in the CES project documentation.
+            <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
+              A transparent, structured calculation documenting how Chundi Educational Society achieves its sustained annual reach and 15-year cumulative impact across educational institutions nationwide.
             </p>
           </div>
 
-          {/* Operational Metrics Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Mathematical Flow Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             
-            <div className="p-6 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between">
+            {/* Step 1: Daily Reach */}
+            <div className="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between relative group hover:border-sky-500/40 transition-all">
               <div>
-                <span className="text-3xl sm:text-4xl font-extrabold text-slate-100 block mb-1">50+</span>
-                <div className="text-sm font-bold text-sky-400 mb-2">Training Teams</div>
-                <p className="text-xs text-slate-400 leading-relaxed">
-                  Dedicated teams conducting sessions across institutions.
-                </p>
+                <span className="text-xs font-extrabold text-sky-400 uppercase tracking-widest block mb-2">
+                  Step 01 • Daily Delivery
+                </span>
+                <div className="text-2xl font-black text-slate-100 mb-2">
+                  50+ Speakers
+                </div>
+                <div className="text-xs text-slate-400 mb-4">
+                  × 2 Sessions a Day
+                </div>
               </div>
-              <div className="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-500 font-medium">
-                Active Training Teams
+              <div className="pt-4 border-t border-slate-800/80">
+                <span className="text-xl font-bold title-gradient block">
+                  = 100 Institutions
+                </span>
+                <span className="text-[11px] text-emerald-400 font-medium">
+                  Reached Every Day
+                </span>
               </div>
             </div>
 
-            <div className="p-6 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between">
+            {/* Step 2: Annual Reach */}
+            <div className="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between relative group hover:border-sky-500/40 transition-all">
               <div>
-                <span className="text-3xl sm:text-4xl font-extrabold text-slate-100 block mb-1">2</span>
-                <div className="text-sm font-bold text-sky-400 mb-2">Average Sessions per Team per Day</div>
-                <p className="text-xs text-slate-400 leading-relaxed">
-                  Average sessions per team per day.
-                </p>
+                <span className="text-xs font-extrabold text-sky-400 uppercase tracking-widest block mb-2">
+                  Step 02 • Annual Window
+                </span>
+                <div className="text-2xl font-black text-slate-100 mb-2">
+                  100 Institutions
+                </div>
+                <div className="text-xs text-slate-400 mb-4">
+                  × 60 Working Days
+                </div>
               </div>
-              <div className="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-500 font-medium">
-                Average Daily Sessions
+              <div className="pt-4 border-t border-slate-800/80">
+                <span className="text-xl font-bold title-gradient block">
+                  = 6,000 Institutions
+                </span>
+                <span className="text-[11px] text-emerald-400 font-medium">
+                  Reached Annually
+                </span>
               </div>
             </div>
 
-            <div className="p-6 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between">
+            {/* Step 3: Students Every Year */}
+            <div className="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between relative group hover:border-sky-500/40 transition-all">
               <div>
-                <span className="text-3xl sm:text-4xl font-extrabold text-slate-100 block mb-1">60+</span>
-                <div className="text-sm font-bold text-sky-400 mb-2">Average Students per Session</div>
-                <p className="text-xs text-slate-400 leading-relaxed">
-                  Average students per session.
-                </p>
+                <span className="text-xs font-extrabold text-sky-400 uppercase tracking-widest block mb-2">
+                  Step 03 • Annual Students
+                </span>
+                <div className="text-2xl font-black text-slate-100 mb-2">
+                  60 Students
+                </div>
+                <div className="text-xs text-slate-400 mb-4">
+                  Per Session Average
+                </div>
               </div>
-              <div className="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-500 font-medium">
-                Average Session Attendance
+              <div className="pt-4 border-t border-slate-800/80">
+                <span className="text-xl font-bold title-gradient block">
+                  = 360,000 Students
+                </span>
+                <span className="text-[11px] text-emerald-400 font-medium">
+                  Reached Every Year
+                </span>
               </div>
             </div>
 
-            <div className="p-6 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between">
+            {/* Step 4: 15-Year Cumulative */}
+            <div className="p-6 rounded-2xl bg-gradient-to-br from-sky-950/60 to-slate-900 border border-sky-500/40 flex flex-col justify-between relative group shadow-lg">
               <div>
-                <span className="text-3xl sm:text-4xl font-extrabold text-amber-400 block mb-1">2 Months</span>
-                <div className="text-sm font-bold text-sky-400 mb-2">Annual Campaign Duration</div>
-                <p className="text-xs text-slate-400 leading-relaxed">
-                  Annual awareness campaign duration.
-                </p>
+                <span className="text-xs font-extrabold text-amber-400 uppercase tracking-widest block mb-2">
+                  Step 04 • 15-Year Milestone
+                </span>
+                <div className="text-2xl font-black text-slate-100 mb-2">
+                  15 Years
+                </div>
+                <div className="text-xs text-slate-400 mb-4">
+                  Continuous Operations (Since 2009)
+                </div>
               </div>
-              <div className="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-500 font-medium">
-                Annual Campaign Window
+              <div className="pt-4 border-t border-slate-800/80">
+                <span className="text-2xl font-black text-amber-400 block">
+                  = 5.4M+ Students
+                </span>
+                <span className="text-[11px] text-slate-200 font-semibold">
+                  Impacted Across India
+                </span>
               </div>
             </div>
 
           </div>
 
-          {/* Source Attribution Note */}
-          <div className="mt-8 pt-6 border-t border-slate-800 flex items-center gap-2 text-xs text-slate-400">
-            <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-            <span>Operational figures sourced directly from CES Project Documentation Section 1.2.</span>
+          {/* Extended Reach Footnote Banner */}
+          <div className="mt-8 p-4 sm:p-5 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs">
+            <div className="flex items-center gap-3 text-slate-300">
+              <GraduationCap className="w-5 h-5 text-sky-400 shrink-0" />
+              <span>
+                <strong>Additional Reach:</strong> In addition to the intermediate campaign, CES has reached <strong>200,000+ Additional Students</strong> through P.U. Colleges & Universities.
+              </span>
+            </div>
+            <span className="text-[11px] text-slate-500 shrink-0">Verified Institutional Figure</span>
           </div>
 
         </div>
@@ -202,13 +255,13 @@ export default function ImpactPage() {
       </section>
 
       {/* ==================================================
-          5. HOW THE AWARENESS SESSIONS WORK (Simple 4-Step Process)
+          5. HOW THE AWARENESS SESSIONS WORK (Delivery Framework)
           ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <SectionHeader
           badge="Awareness Delivery Process"
           title="How the Awareness Sessions Work"
-          description="Sessions conducted across educational institutions for intermediate second-year students."
+          description="A structured delivery model tailored for young people navigating critical transition stages."
           className="mb-12"
         />
 
@@ -223,11 +276,11 @@ export default function ImpactPage() {
                 Educational Institutions
               </h3>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Conducting sessions across educational institutions and communities across India.
+                Reaching 6,000+ educational institutions and communities across India every year.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-800 text-[11px] text-slate-500 font-medium">
-              Institutional Sessions
+              6,000+ Institutions Annually
             </div>
           </div>
 
@@ -237,14 +290,14 @@ export default function ImpactPage() {
                 02
               </span>
               <h3 className="text-lg font-bold text-slate-100 mb-2">
-                Awareness Sessions
+                Motivational Delivery
               </h3>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                50+ trainers conducting motivational and awareness sessions.
+                50+ motivational speakers conducting interactive sessions to inspire and guide students.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-800 text-[11px] text-slate-500 font-medium">
-              50+ Trainers
+              50+ Motivational Speakers
             </div>
           </div>
 
@@ -257,11 +310,11 @@ export default function ImpactPage() {
                 Student Engagement
               </h3>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Creating awareness among intermediate second-year students during transition to higher education.
+                Engaging students directly with life skills, motivation, leadership, and positive goal setting.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-800 text-[11px] text-slate-500 font-medium">
-              Second-Year Students
+              Direct Student Engagement
             </div>
           </div>
 
@@ -271,14 +324,14 @@ export default function ImpactPage() {
                 04
               </span>
               <h3 className="text-lg font-bold text-slate-100 mb-2">
-                Harmful Habit Awareness
+                Preventative & Social Values
               </h3>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Awareness about the dangers of drugs, smoking, alcohol, and other harmful habits.
+                Empowering youth with awareness on substance abuse, road safety, ethics, and responsible citizenship.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-800 text-[11px] text-slate-500 font-medium">
-              Dangers of Harmful Habits
+              Prevention & Citizenship
             </div>
           </div>
 
@@ -286,7 +339,7 @@ export default function ImpactPage() {
       </section>
 
       {/* ==================================================
-          6. FREE ACCESS (Free of charge Notice)
+          6. SERVICE BEYOND COMMERCIALISATION
           ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="inst-card p-8 sm:p-12 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 border-emerald-500/20">
@@ -296,37 +349,39 @@ export default function ImpactPage() {
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-4">
                 <HeartHandshake className="w-3.5 h-3.5" />
-                <span>Activities Conducted Free of Charge</span>
+                <span>Institutional Social Mission</span>
               </div>
 
               <h2 className="text-2xl sm:text-4xl font-bold text-slate-100 mb-4 leading-tight">
-                Free of Charge Initiative
+                Service Beyond Commercialisation
               </h2>
 
-              <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">
-                All activities are conducted free of charge. No fees are collected from:
+              <p className="text-base sm:text-lg text-slate-200 leading-relaxed mb-6 font-medium">
+                CES has always focused on creating meaningful social impact, without commercially benefiting from its awareness and life-skills initiatives.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs sm:text-sm font-semibold text-slate-200">
                 <div className="p-3 rounded-lg bg-slate-900 border border-slate-800 flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Students</span>
+                  <span className="whitespace-nowrap">Youth Development</span>
                 </div>
                 <div className="p-3 rounded-lg bg-slate-900 border border-slate-800 flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Parents</span>
+                  <span className="whitespace-nowrap">Nationwide Outreach</span>
                 </div>
                 <div className="p-3 rounded-lg bg-slate-900 border border-slate-800 flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Educational Institutions</span>
+                  <span className="whitespace-nowrap">Purpose-Driven Impact</span>
                 </div>
               </div>
             </div>
 
-            <div className="lg:w-72 shrink-0 p-6 rounded-2xl bg-slate-900/90 border border-slate-800 text-center flex flex-col items-center justify-center">
-              <GraduationCap className="w-10 h-10 text-emerald-400 mb-3" />
-              <span className="text-2xl font-extrabold text-slate-100 mb-1">Free of charge</span>
-              <span className="text-xs text-slate-400">No Fees Collected</span>
+            <div className="lg:w-80 shrink-0 p-6 sm:p-8 rounded-2xl bg-slate-900/90 border border-slate-800 text-center flex flex-col items-center justify-center">
+              <ShieldCheck className="w-10 h-10 text-emerald-400 mb-3" />
+              <span className="text-xl font-extrabold text-slate-100 mb-2">Social Mission</span>
+              <span className="text-xs sm:text-sm font-bold text-sky-400 tracking-wider uppercase">
+                15 YEARS. MILLIONS OF LIVES. ONE VISION.
+              </span>
             </div>
 
           </div>
@@ -345,11 +400,11 @@ export default function ImpactPage() {
           </span>
 
           <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-100 max-w-3xl leading-tight mb-4">
-            Awareness is most powerful when it reaches students before harmful habits become part of their lives.
+            Awareness and motivation are most powerful when they reach young people before critical life decisions take shape.
           </h2>
 
           <p className="text-xs sm:text-sm text-slate-400 max-w-xl leading-relaxed">
-            Creating awareness among intermediate second-year students as they transition from school life to higher education.
+            Empowering students across India with self-belief, life skills, and positive direction for purposeful futures.
           </p>
 
         </div>

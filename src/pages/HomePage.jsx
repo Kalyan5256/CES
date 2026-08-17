@@ -16,11 +16,10 @@ import {
   MapPin,
   CheckCircle2,
   HeartHandshake,
-  CigaretteOff,
-  WineOff,
   Activity,
   ShieldAlert,
   GraduationCap,
+  Sparkles,
   Image as ImageIcon
 } from 'lucide-react';
 
@@ -56,7 +55,7 @@ export default function HomePage() {
               Since 2009, Chundi Educational Society has worked with educational institutions across India to empower young people through awareness, motivation, life skills, leadership, career guidance and responsible citizenship.
             </p>
             <p className="text-base sm:text-lg lg:text-xl text-slate-300 leading-relaxed font-normal mb-8 max-w-2xl">
-              With awareness and prevention at the heart of its work, CES helps young people make informed choices and prepare for a purposeful future.
+              With awareness, personal development, and prevention at the heart of its work, CES helps young people make informed choices and prepare for a purposeful future.
             </p>
 
             {/* Call to Actions */}
@@ -73,15 +72,15 @@ export default function HomePage() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-800/80 w-full text-slate-300 text-xs sm:text-sm font-medium">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>6.12M+ Students</span>
+                <span>5.4M+ Students</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>50+ Teams</span>
+                <span>50+ Speakers</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>6,000+ Institutions</span>
+                <span>6K+ Institutions</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -102,7 +101,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 text-left">
                   <div className="text-xs text-slate-200">
                     <span className="font-bold block text-sky-400">Campaign Outreach</span>
-                    Interactive awareness session in progress.
+                    Interactive motivational session in progress.
                   </div>
                 </div>
               </div>
@@ -113,7 +112,7 @@ export default function HomePage() {
                   <MapPin className="w-3.5 h-3.5 text-sky-400" />
                   CES Campaign
                 </span>
-                <span className="font-semibold text-amber-400">6.12M+ Students</span>
+                <span className="font-semibold text-amber-400">5.4M+ Impacted</span>
               </div>
             </div>
           </div>
@@ -127,26 +126,32 @@ export default function HomePage() {
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="inst-card p-6 sm:p-10 border-slate-800/90 relative">
           
-          <div className="mb-8 text-center sm:text-left">
-            <span className="text-xs font-semibold uppercase tracking-widest text-sky-400">
-              Verified Operational Metrics
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-100 mt-1">
-              17+ Years of Social Impact
-            </h2>
+          <div className="mb-8 text-center sm:text-left flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <span className="text-xs font-semibold uppercase tracking-widest text-sky-400">
+                Verified Operational Metrics
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-bold text-slate-100 mt-1">
+                {ORGANIZATION_DATA.visionStatement}
+              </h2>
+            </div>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full badge-gold text-xs font-semibold uppercase tracking-wider self-start sm:self-center">
+              <Sparkles className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <span>15 Years of Social Impact</span>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <ImpactStat
-              value="2009"
-              label="Established"
-              sublabel="Founded as a student awareness NGO"
-              icon={Calendar}
+              value="5.4M+"
+              label="Students Impacted"
+              sublabel="Cumulative reach across 15 years"
+              icon={BookOpen}
             />
             <ImpactStat
               value="50+"
-              label="Training Teams"
-              sublabel="Conducting Pan-India sessions"
+              label="Motivational Speakers"
+              sublabel="Delivering nationwide sessions"
               icon={Users}
             />
             <ImpactStat
@@ -156,19 +161,19 @@ export default function HomePage() {
               icon={Award}
             />
             <ImpactStat
-              value="6.12M+"
-              label="Students Trained"
-              sublabel="Cumulative second-year intermediate reach"
-              icon={BookOpen}
+              value="2009"
+              label="Established"
+              sublabel="Founded as a student awareness NGO"
+              icon={Calendar}
             />
           </div>
 
           <div className="mt-8 pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
             <div className="flex items-center gap-2">
               <HeartHandshake className="w-4 h-4 text-emerald-400 shrink-0" />
-              <span>Activities are conducted free of charge. No fees are collected from students, parents, or educational institutions.</span>
+              <span>CES has always focused on creating meaningful social impact, without commercially benefiting from its awareness and life-skills initiatives.</span>
             </div>
-            <Link to="/impact" className="text-sky-400 font-semibold hover:underline flex items-center gap-1">
+            <Link to="/impact" className="text-sky-400 font-semibold hover:underline flex items-center gap-1 shrink-0">
               <span>View Reach & Impact</span>
               <ArrowRight className="w-3 h-3" />
             </Link>
@@ -199,7 +204,7 @@ export default function HomePage() {
                 Awareness & Prevention
               </h3>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Educating students on the dangers of substance abuse, harmful habits, and peer pressure.
+                Educating students on the dangers of substance abuse, harmful habits, decision-making, and peer pressure.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-800/60 w-full text-xs font-semibold text-sky-400">
@@ -217,7 +222,7 @@ export default function HomePage() {
                 Personal Development
               </h3>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Building confidence, communication, discipline, goal setting, and essential life skills.
+                Building motivation, self-confidence, communication, discipline, goal setting, and essential life skills.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-800/60 w-full text-xs font-semibold text-sky-400">
@@ -235,7 +240,7 @@ export default function HomePage() {
                 Future Readiness
               </h3>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Focusing on career planning, leadership, skill development, and professional growth.
+                Focusing on career guidance, leadership, skill building, innovation, and professional growth.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-800/60 w-full text-xs font-semibold text-sky-400">
@@ -253,7 +258,7 @@ export default function HomePage() {
                 Responsible Citizenship
               </h3>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Instilling road safety, law awareness, values, ethics, and social responsibility.
+                Instilling road safety, law awareness, values, ethics, social responsibility, and active citizenship.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-800/60 w-full text-xs font-semibold text-sky-400">
@@ -265,7 +270,7 @@ export default function HomePage() {
       </section>
 
       {/* ==================================================
-          TRAINER SPOTLIGHT (The People Behind the Mission)
+          TRAINER / SPEAKER SPOTLIGHT (The People Behind the Mission)
           ================================================== */}
       <TrainerSpotlight />
 
@@ -284,7 +289,7 @@ export default function HomePage() {
                 Our Reach Across India
               </h2>
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">
-                CES conducts awareness and development programs in educational institutions and communities throughout India, having reached 6.12 million+ students.
+                CES conducts awareness and development programs in educational institutions and communities throughout India, having impacted 5.4 million+ students across 15 years.
               </p>
               
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300 mb-4">
@@ -298,11 +303,11 @@ export default function HomePage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-3">
                   <div className="w-9 h-9 rounded-lg bg-sky-500/10 border border-sky-500/20 text-sky-400 font-bold text-xs flex items-center justify-center shrink-0">
-                    6M+
+                    5.4M
                   </div>
                   <div>
-                    <span className="text-sm font-semibold text-slate-200 block">6.12M+ Students</span>
-                    <span className="text-xs text-slate-400">Cumulative trained total</span>
+                    <span className="text-sm font-semibold text-slate-200 block">5.4M+ Students</span>
+                    <span className="text-xs text-slate-400">Students impacted</span>
                   </div>
                 </div>
 
@@ -312,7 +317,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <span className="text-sm font-semibold text-slate-200 block">6,000+ Institutions</span>
-                    <span className="text-xs text-slate-400">Annual institutional reach</span>
+                    <span className="text-xs text-slate-400">Reached annually across India</span>
                   </div>
                 </div>
 
@@ -321,18 +326,18 @@ export default function HomePage() {
                     50+
                   </div>
                   <div>
-                    <span className="text-sm font-semibold text-slate-200 block">50+ Training Teams</span>
-                    <span className="text-xs text-slate-400">CES awareness initiatives across India</span>
+                    <span className="text-sm font-semibold text-slate-200 block">50+ Motivational Speakers</span>
+                    <span className="text-xs text-slate-400">Nationwide speaker network</span>
                   </div>
                 </div>
 
                 <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-3">
                   <div className="w-9 h-9 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 font-bold text-xs flex items-center justify-center shrink-0">
-                    FREE
+                    CES
                   </div>
                   <div>
-                    <span className="text-sm font-semibold text-slate-200 block">No Student Fees</span>
-                    <span className="text-xs text-slate-400">Conducted free of charge</span>
+                    <span className="text-sm font-semibold text-slate-200 block">Social Mission</span>
+                    <span className="text-xs text-slate-400">Service beyond commercialisation</span>
                   </div>
                 </div>
 
@@ -347,7 +352,7 @@ export default function HomePage() {
                       <div className="text-xs text-slate-400">Sessions across educational institutions nationwide</div>
                     </div>
                   </div>
-                  <span className="text-xs font-semibold text-emerald-400">Free of charge</span>
+                  <span className="text-xs font-semibold text-emerald-400">Social Mission</span>
                 </div>
 
               </div>
@@ -370,10 +375,10 @@ export default function HomePage() {
 
             <div className="space-y-4 text-sm sm:text-base text-slate-300 leading-relaxed">
               <p>
-                Established in 2009, Chundi Educational Society recognized that the intermediate second-year stage marks the transition from school life to higher education — a period when students commonly begin experimenting with unhealthy habits.
+                Established in 2009, Chundi Educational Society recognized that young people navigate crucial transition stages from school life to higher education and beyond — a period when guidance, motivation, and positive decision-making are vital.
               </p>
               <p>
-                For 17 years, CES has conducted motivational and educational sessions across institutions in India, with all activities conducted free of charge.
+                Over 15 years, CES has conducted motivational and educational sessions across institutions in India, guided by its commitment to service beyond commercialisation.
               </p>
             </div>
 
@@ -385,12 +390,12 @@ export default function HomePage() {
               <div className="w-px h-8 bg-slate-800" />
               <div>
                 <div className="text-2xl font-bold text-slate-100">50+</div>
-                <div className="text-xs text-slate-400">Trainers</div>
+                <div className="text-xs text-slate-400">Motivational Speakers</div>
               </div>
               <div className="w-px h-8 bg-slate-800" />
               <div>
-                <div className="text-2xl font-bold text-slate-100">6.12M+</div>
-                <div className="text-xs text-slate-400">Students Trained</div>
+                <div className="text-2xl font-bold text-slate-100">5.4M+</div>
+                <div className="text-xs text-slate-400">Students Impacted</div>
               </div>
             </div>
           </div>
@@ -465,7 +470,7 @@ export default function HomePage() {
           </h2>
 
           <p className="text-sm sm:text-base text-slate-300 max-w-xl leading-relaxed mb-8">
-            Chundi Educational Society continues to offer educational programs across institutions in India. Activities are conducted free of charge.
+            Chundi Educational Society continues to empower students across educational institutions in India, guided by its commitment to service beyond commercialisation.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
