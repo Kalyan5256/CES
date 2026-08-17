@@ -2,6 +2,7 @@ import React from 'react';
 import SectionHeader from '../components/SectionHeader';
 import Button from '../components/Button';
 import ImpactStat from '../components/ImpactStat';
+import { ORGANIZATION_DATA } from '../data/organization';
 import {
   ArrowRight,
   ShieldCheck,
@@ -13,7 +14,9 @@ import {
   GraduationCap,
   Target,
   Compass,
-  History
+  History,
+  Quote,
+  Sparkles
 } from 'lucide-react';
 
 export default function AboutPage() {
@@ -38,7 +41,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-base sm:text-xl text-slate-300 leading-relaxed font-normal mb-8">
-            Founded by Dr. Surya Chundi in 2009, Chundi Educational Society (CES) is focused on youth empowerment and development through education, awareness, and life skills training.
+            Founded by Dr. Surya Chundi in 2009, Chundi Educational Society (CES) is dedicated to youth empowerment and development through education, awareness, motivation, life skills, and leadership guidance across India.
           </p>
 
           <div className="flex flex-wrap items-center gap-6 pt-6 border-t border-slate-800/80 text-xs sm:text-sm font-medium text-slate-400 w-full">
@@ -48,7 +51,7 @@ export default function AboutPage() {
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-sky-400" />
-              <span>17+ Years of Service</span>
+              <span>15 Years of Impact</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-amber-400" />
@@ -74,31 +77,31 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-sm sm:text-base text-slate-300 leading-relaxed">
                 <p>
-                  Founded by Dr. Surya Chundi, Chundi Educational Society (CES) is an NGO established in 2009. Its mission focuses on youth empowerment and development, equipping students with critical life skills and awareness to build responsible futures.
+                  Founded by Dr. Surya Chundi, Chundi Educational Society (CES) is an NGO established in 2009. Its mission centers on empowering young minds with motivation, critical life skills, leadership abilities, and awareness to make responsible choices.
                 </p>
                 <p>
-                  For the past 17 years, CES has conducted motivational and educational sessions across institutions in India. All activities are conducted free of charge.
+                  Over the past 15 years, CES has conducted structured motivational and educational sessions across institutions in India, guided by an unwavering commitment to service beyond commercialisation.
                 </p>
               </div>
             </div>
 
             {/* Visual Frame */}
             <div className="lg:col-span-5 w-full">
-              <div className="aspect-square rounded-2xl bg-slate-900 border border-slate-800 p-6 flex flex-col justify-between relative overflow-hidden">
+              <div className="aspect-square rounded-2xl bg-slate-900 border border-slate-800 p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden">
                 <div className="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400 flex items-center justify-center">
                   <GraduationCap className="w-6 h-6" />
                 </div>
                 <div>
-                  <span className="text-2xl sm:text-3xl font-extrabold title-gradient block mb-1">
-                    Free of charge
+                  <span className="text-xl sm:text-2xl font-extrabold text-slate-100 block mb-2">
+                    Service Beyond Commercialisation
                   </span>
                   <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                    No fees are collected from students, parents, or educational institutions for any CES awareness activity.
+                    CES has always focused on creating meaningful social impact, without commercially benefiting from its awareness and life-skills initiatives.
                   </p>
                 </div>
-                <div className="pt-4 border-t border-slate-800 text-xs font-semibold text-slate-400 flex items-center gap-1.5">
-                  <HeartHandshake className="w-4 h-4 text-emerald-400" />
-                  <span>Documented NGO Policy</span>
+                <div className="pt-4 border-t border-slate-800 text-xs font-semibold text-emerald-400 flex items-center gap-1.5">
+                  <HeartHandshake className="w-4 h-4" />
+                  <span>Institutional Social Mission</span>
                 </div>
               </div>
             </div>
@@ -108,7 +111,38 @@ export default function AboutPage() {
       </section>
 
       {/* ==================================================
-          3. WHY WE FOCUS ON STUDENTS (Document-Supported Rationale)
+          3. FOUNDER STATEMENT & QUOTE
+          ================================================== */}
+      <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <div className="inst-card p-8 sm:p-12 relative overflow-hidden bg-linear-to-br from-slate-900 via-slate-950 to-slate-900 border-sky-500/30">
+          <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
+            <div className="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 mb-6">
+              <Quote className="w-6 h-6" />
+            </div>
+
+            <span className="text-xs font-semibold uppercase tracking-widest text-sky-400 mb-4">
+              Founder's Vision
+            </span>
+
+            <blockquote className="text-xl sm:text-3xl lg:text-4xl font-bold text-slate-100 leading-snug mb-6 italic">
+              "{ORGANIZATION_DATA.founderQuote.quote}"
+            </blockquote>
+
+            <div className="flex flex-col items-center">
+              <span className="text-base sm:text-lg font-bold text-sky-400">
+                — {ORGANIZATION_DATA.founderQuote.author}
+              </span>
+              <span className="text-xs sm:text-sm text-slate-400 mt-0.5">
+                {ORGANIZATION_DATA.founderQuote.title}
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* ==================================================
+          4. WHY WE FOCUS ON STUDENTS (Document-Supported Rationale)
           ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
@@ -118,7 +152,7 @@ export default function AboutPage() {
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-gold text-xs font-semibold uppercase tracking-wider mb-4">
                 <Target className="w-3.5 h-3.5 text-amber-400" />
-                <span>Transition Stage Focus</span>
+                <span>Crucial Transition Focus</span>
               </div>
 
               <h2 className="text-2xl sm:text-3xl font-bold text-slate-100 mb-4">
@@ -126,37 +160,41 @@ export default function AboutPage() {
               </h2>
 
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">
-                CES focuses on intermediate second-year students specifically, as this stage marks the transition from school life to higher education — a period when students commonly begin experimenting with unhealthy habits.
+                CES focuses specifically on intermediate second-year students, as this stage marks the critical transition from school life to higher education — a period when young people face pivotal decisions regarding lifestyle, academic direction, and peer influence.
               </p>
 
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-                By conducting motivational and awareness sessions during this period, CES aims to empower students to choose healthier futures.
+                By conducting motivational, life-skills, and awareness sessions during this pivotal period, CES empowers students to build self-confidence, practice responsible decision-making, and navigate their future with clear purpose.
               </p>
             </div>
 
             <div className="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-3 text-xs font-semibold text-sky-400">
               <ShieldCheck className="w-4 h-4" />
-              <span>Transition from School Life to Higher Education</span>
+              <span>Transition from School Life to Higher Education & Adulthood</span>
             </div>
           </div>
 
           {/* Side Highlight Panel */}
           <div className="lg:col-span-4 inst-card p-6 flex flex-col justify-center bg-linear-to-b from-slate-900 to-slate-950">
             <h3 className="text-lg font-bold text-slate-100 mb-3">
-              Focus Parameters
+              Core Strategic Pillars
             </h3>
             <ul className="space-y-3 text-xs sm:text-sm text-slate-400">
               <li className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-sky-400 mt-2 shrink-0" />
-                <span>Transition from school life to higher education</span>
+                <span>Transition guidance from school to higher education</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-sky-400 mt-2 shrink-0" />
-                <span>Focus on youth empowerment and development</span>
+                <span>Motivation, life skills, and personality development</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-sky-400 mt-2 shrink-0" />
-                <span>Educational institution sessions across India</span>
+                <span>Preventative awareness on substance abuse</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-sky-400 mt-2 shrink-0" />
+                <span>Career readiness and responsible citizenship</span>
               </li>
             </ul>
           </div>
@@ -165,66 +203,31 @@ export default function AboutPage() {
       </section>
 
       {/* ==================================================
-          4. MISSION & PURPOSE (Documented Direction)
+          5. VISION / MILESTONE BANNER
           ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="inst-card p-6 sm:p-12 relative">
-          <SectionHeader
-            badge="Organizational Mission"
-            title="Our Mission & Purpose"
-            description="Empower young people through education, awareness, motivation, life skills, leadership, career direction, and responsible citizenship."
-            align="left"
-            className="mb-8"
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
-            <div className="p-6 rounded-xl bg-slate-900/80 border border-slate-800">
-              <h3 className="text-lg font-bold text-slate-100 mb-2">
-                Student Awareness
-              </h3>
-              <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Conducting motivational sessions to focus on youth empowerment and development, guiding students toward purposeful futures.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-xl bg-slate-900/80 border border-slate-800">
-              <h3 className="text-lg font-bold text-slate-100 mb-2">
-                Free Educational Initiative
-              </h3>
-              <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Activities are conducted free of charge. No fees are collected from students, parents, or educational institutions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ==================================================
-          5. VISION / DIRECTION
-          ================================================== */}
-      <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="inst-card p-8 sm:p-12 text-center flex flex-col items-center bg-linear-to-br from-slate-900 via-slate-950 to-slate-900 border-sky-500/20">
+        <div className="inst-card p-8 sm:p-14 text-center flex flex-col items-center bg-linear-to-br from-slate-900 via-slate-950 to-slate-900 border-sky-500/20">
           
           <div className="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 mb-6">
             <Compass className="w-6 h-6" />
           </div>
 
           <span className="text-xs font-semibold uppercase tracking-widest text-sky-400 mb-2">
-            Organizational Theme
+            Institutional Milestone
           </span>
 
-          <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-100 max-w-2xl leading-tight mb-4">
-            "Empowering Young Minds. Building Responsible Futures."
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-100 max-w-3xl leading-tight mb-4">
+            {ORGANIZATION_DATA.visionStatement}
           </h2>
 
           <p className="text-xs sm:text-sm text-slate-400 max-w-xl leading-relaxed">
-            Building youth empowerment and development to support students during their transition to higher education.
+            Building youth empowerment, motivation, and responsible citizenship across educational institutions throughout India since 2009.
           </p>
         </div>
       </section>
 
       {/* ==================================================
-          6. SINCE 2009 (Verified Timeline / History)
+          6. SINCE 2009 (Continuous Operations)
           ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="inst-card p-6 sm:p-10">
@@ -250,17 +253,17 @@ export default function AboutPage() {
                 <span className="text-3xl font-extrabold text-amber-400 block mb-1">2009</span>
                 <h3 className="text-base font-bold text-slate-100 mb-2">Established</h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Established as an NGO focused on intermediate second-year student awareness.
+                  Established as an NGO focused on youth motivation, awareness, and development.
                 </p>
               </div>
             </div>
 
             <div className="p-6 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between">
               <div>
-                <span className="text-3xl font-extrabold title-gradient block mb-1">17+</span>
-                <h3 className="text-base font-bold text-slate-100 mb-2">Years of Service</h3>
+                <span className="text-3xl font-extrabold title-gradient block mb-1">15 Years</span>
+                <h3 className="text-base font-bold text-slate-100 mb-2">Social Impact</h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  17 years of conducting motivational and educational sessions across India.
+                  15 years of conducting structured motivational and educational sessions across India.
                 </p>
               </div>
             </div>
@@ -268,9 +271,9 @@ export default function AboutPage() {
             <div className="p-6 rounded-xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between">
               <div>
                 <span className="text-3xl font-extrabold text-sky-400 block mb-1">50+</span>
-                <h3 className="text-base font-bold text-slate-100 mb-2">Training Teams</h3>
+                <h3 className="text-base font-bold text-slate-100 mb-2">Motivational Speakers</h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Active training teams conducting sessions across 6,000+ educational institutions annually.
+                  Active speaker network reaching 6,000+ educational institutions annually.
                 </p>
               </div>
             </div>
@@ -287,34 +290,34 @@ export default function AboutPage() {
         <SectionHeader
           badge="Verified Metrics"
           title="Social Impact"
-          description="Documented figures from 17+ years of youth empowerment sessions across India."
+          description="Documented figures from 15 years of youth empowerment sessions across India."
           className="mb-10"
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <ImpactStat
-            value="6.12M+"
-            label="Students Trained"
-            sublabel="Total cumulative trained"
+            value="5.4M+"
+            label="Students Impacted"
+            sublabel="Cumulative reach across 15 years"
             icon={BookOpen}
           />
           <ImpactStat
             value="50+"
-            label="Training Teams"
+            label="Motivational Speakers"
             sublabel="Conducting Pan-India sessions"
             icon={Users}
           />
           <ImpactStat
-            value="17+"
-            label="Years of Service"
-            sublabel="Since establishment in 2009"
-            icon={Calendar}
+            value="6,000+"
+            label="Institutions Annually"
+            sublabel="Educational outreach programs"
+            icon={Award}
           />
           <ImpactStat
-            value="Free"
-            label="Free of charge"
-            sublabel="No fees collected"
-            icon={HeartHandshake}
+            value="2009"
+            label="Established"
+            sublabel="Founded by Dr. Surya Chundi"
+            icon={Calendar}
           />
         </div>
       </section>

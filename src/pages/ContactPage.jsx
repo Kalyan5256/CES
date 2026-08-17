@@ -10,7 +10,8 @@ import {
   Share2,
   Globe,
   School,
-  Info
+  Info,
+  HeartHandshake
 } from 'lucide-react';
 
 export default function ContactPage() {
@@ -41,7 +42,7 @@ export default function ContactPage() {
           <div className="flex flex-wrap items-center gap-6 pt-6 border-t border-slate-800/80 text-xs sm:text-sm font-medium text-slate-400 w-full">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400" />
-              <span>Free of charge</span>
+              <span>Service Beyond Commercialisation</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-sky-400" />
@@ -71,7 +72,7 @@ export default function ContactPage() {
                 Connecting with Institutions & Stakeholders
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                CES conducts educational and development programs for youth across India. All activities are conducted free of charge — no fees are collected from students, parents, or educational institutions.
+                CES conducts educational and development programs for youth across India. All initiatives reflect our commitment to service beyond commercialisation — focusing on meaningful social impact without commercial benefit.
               </p>
             </div>
 
@@ -118,9 +119,7 @@ export default function ContactPage() {
               <span className="text-[11px] font-semibold text-amber-400 uppercase tracking-wider block">
                 Placeholder Slot
               </span>
-              <span className="text-xs font-medium text-slate-300">
-                Official address to be provided
-              </span>
+              <span className="text-xs text-slate-300 font-medium">To be updated</span>
             </div>
           </div>
 
@@ -131,10 +130,10 @@ export default function ContactPage() {
                 <Phone className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-slate-100 mb-2">
-                Phone Contact
+                Institutional Phone Contact
               </h3>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Official contact phone number to be provided by CES leadership.
+                Dedicated telephone numbers for educational institutions and organizers.
               </p>
             </div>
 
@@ -142,9 +141,7 @@ export default function ContactPage() {
               <span className="text-[11px] font-semibold text-amber-400 uppercase tracking-wider block">
                 Placeholder Slot
               </span>
-              <span className="text-xs font-medium text-slate-300">
-                Official phone number to be provided
-              </span>
+              <span className="text-xs text-slate-300 font-medium">To be updated</span>
             </div>
           </div>
 
@@ -155,10 +152,10 @@ export default function ContactPage() {
                 <Mail className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-slate-100 mb-2">
-                Email Address
+                Electronic Mail
               </h3>
               <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                Official email address to be provided by CES leadership.
+                Official institutional email addresses for inquiries and session invitations.
               </p>
             </div>
 
@@ -166,36 +163,22 @@ export default function ContactPage() {
               <span className="text-[11px] font-semibold text-amber-400 uppercase tracking-wider block">
                 Placeholder Slot
               </span>
-              <span className="text-xs font-medium text-slate-300">
-                Official email address to be provided
-              </span>
+              <span className="text-xs text-slate-300 font-medium">To be updated</span>
             </div>
           </div>
 
         </div>
-
       </section>
 
       {/* ==================================================
-          4. LOCATION / MAP PLACEHOLDER
+          4. MAP PLACEHOLDER
           ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="inst-card p-6 sm:p-10 relative overflow-hidden">
+        <div className="inst-card p-6 sm:p-12 relative overflow-hidden border-slate-800">
           
-          <div className="mb-6">
-            <span className="text-xs font-semibold uppercase tracking-widest text-sky-400 block mb-1">
-              Geographic Location
-            </span>
-            <h2 className="text-xl sm:text-2xl font-bold text-slate-100">
-              Organization Location Map
-            </h2>
-          </div>
-
-          {/* Premium Map Placeholder Slot */}
-          <div className="aspect-[16/8] min-h-[220px] rounded-xl bg-slate-900 border border-slate-800 flex flex-col items-center justify-center text-center p-6 relative overflow-hidden group">
-            
-            <div className="w-14 h-14 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center text-sky-400 mb-3 shadow-md group-hover:scale-110 transition-transform">
-              <Globe className="w-7 h-7" />
+          <div className="aspect-[21/9] sm:aspect-[3/1] rounded-2xl bg-slate-900/90 border border-slate-800 flex flex-col items-center justify-center text-center p-6 relative">
+            <div className="w-12 h-12 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center text-sky-400 mb-3">
+              <Globe className="w-6 h-6" />
             </div>
 
             <h3 className="text-base sm:text-lg font-bold text-slate-200 mb-1">
@@ -245,7 +228,7 @@ export default function ContactPage() {
       </section>
 
       {/* ==================================================
-          7. CLOSING CTA
+          6. CLOSING CTA
           ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="inst-card p-8 sm:p-12 text-center flex flex-col items-center border-sky-500/20">

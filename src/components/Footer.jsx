@@ -38,11 +38,11 @@ export default function Footer() {
             <div className="flex flex-wrap items-center gap-3 pt-2">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">
                 <ShieldCheck className="w-4 h-4 text-sky-400" />
-                <span>17+ Years of Dedicated Service</span>
+                <span>15 Years of Social Impact</span>
               </div>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">
                 <HeartHandshake className="w-4 h-4 text-emerald-400" />
-                <span>Free of charge</span>
+                <span>Service Beyond Commercialisation</span>
               </div>
             </div>
           </div>
