@@ -29,7 +29,7 @@ export const FOOTER_SECTIONS = [
   {
     title: "Our Reach",
     links: [
-      { label: "Pan-India Reach", path: "/impact" },
+      { label: "India Reach", path: "/impact" },
       { label: "Educational Institutions", path: "/impact" },
       { label: "Campaign Operations", path: "/impact" }
     ]

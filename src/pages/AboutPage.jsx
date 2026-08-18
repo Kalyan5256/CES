@@ -55,7 +55,7 @@ export default function AboutPage() {
             </div>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-amber-400" />
-              <span>Pan-India Focus</span>
+              <span>India Focus</span>
             </div>
           </div>
         </div>
@@ -304,7 +304,7 @@ export default function AboutPage() {
           <ImpactStat
             value="50+"
             label="Motivational Speakers"
-            sublabel="Conducting Pan-India sessions"
+            sublabel="Conducting sessions across India"
             icon={Users}
           />
           <ImpactStat

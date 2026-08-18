@@ -33,7 +33,7 @@ export default function StaticReachMap() {
           <div className="w-full flex items-center justify-between text-xs text-slate-400 mb-2 pb-2 border-b border-slate-800/60">
             <div className="flex items-center gap-2 text-sky-400 font-semibold uppercase tracking-wider text-[11px]">
               <span className="w-2 h-2 rounded-full bg-sky-400 animate-pulse" />
-              <span>Pan-India Presence</span>
+              <span>India Presence</span>
             </div>
             <span className="text-[11px] text-slate-500 font-medium">Since 2009</span>
           </div>

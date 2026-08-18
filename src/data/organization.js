@@ -19,7 +19,7 @@ export const ORGANIZATION_DATA = {
     title: "Founder, Chundi Educational Society"
   },
   targetAudience: "Young minds and students",
-  geographicFocus: "Pan-India",
+  geographicFocus: "India",
   corePillars: [
     {
       id: "awareness",

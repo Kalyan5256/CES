@@ -248,7 +248,7 @@ export default function ImpactPage() {
       </section>
 
       {/* ==================================================
-          4. REACH ACROSS INDIA (Static Decorative Pan-India Vector Map)
+          4. REACH ACROSS INDIA (Static Decorative India Vector Map)
           ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <StaticReachMap />

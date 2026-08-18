@@ -275,7 +275,7 @@ export default function HomePage() {
       <TrainerSpotlight />
 
       {/* ==================================================
-          4. OUR REACH (Pan-India Presence)
+          4. OUR REACH (India Presence)
           ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="inst-card p-6 sm:p-10">
@@ -294,11 +294,11 @@ export default function HomePage() {
               
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300 mb-4">
                 <MapPin className="w-4 h-4 text-sky-400" />
-                <span>Geographic Focus: Pan-India</span>
+                <span>Geographic Focus: India</span>
               </div>
             </div>
 
-            {/* Pan-India Operational Highlights */}
+            {/* India Operational Highlights */}
             <div className="lg:col-span-7">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center gap-3">
@@ -348,7 +348,7 @@ export default function HomePage() {
                       IN
                     </div>
                     <div>
-                      <div className="text-sm font-bold text-slate-100">Pan-India Operations</div>
+                      <div className="text-sm font-bold text-slate-100">India Operations</div>
                       <div className="text-xs text-slate-400">Sessions across educational institutions nationwide</div>
                     </div>
                   </div>
